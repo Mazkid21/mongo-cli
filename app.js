@@ -12,15 +12,15 @@ var url = "mongodb://localhost:27017/retaurant_db";
   // }
 
 //TASK 1
-   // mongo.connect(url, function(err, db){
-   // var collection = db.collection('restaurants');
+    mongo.connect(url, function(err, db){
+      var collection = db.collection('restaurants');
  
-   // var specific = prompt("Enter name of restaurant you are looking for' names: ");
-   //   	collection.find({"name":specific}).toArray(function (err, doc) {
-   //   		console.log(doc);
-   //   	});
+      var specific = prompt("Enter name of restaurant you are looking for' name:");
+      	 collection.find({"name":specific}).toArray(function (err, doc) {
+      		  console.log(doc);
+      	});
 
-   //  });
+     });
 
    // TASK 2
 
@@ -35,3 +35,4 @@ var url = "mongodb://localhost:27017/retaurant_db";
 //   		});
 // });
 
+Birch & Barley
